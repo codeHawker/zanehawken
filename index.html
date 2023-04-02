@@ -33,13 +33,13 @@
             <div class="nav-link-container">
                 <ul class="nav-items">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" data-scrolling="yes" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Education</a>
+                        <a class="nav-link" href="#education">Education</a>
                     </li>
                 </ul>
             </div>
@@ -49,7 +49,7 @@
     </nav>
 
 
-    <div class="landing-section">
+    <div id="home" class="landing-section">
 
         <div class="landing-content">
 
@@ -58,15 +58,15 @@
             <p class="landing-text text-tagline">I’m Zane, a developer from New Zealand 🇳🇿</p>
 
             <div class="contact-button button wiggle">
-                <a class="contact-button-text">✉️ Contact</a>
-
+                <a class="contact-button-text" 
+                onclick="document.location = 'mailto:zanehawken@gmail.com' ">✉️ Contact</a>
             </div>
         </div>
     </div>
 
-    <div class="divider-line"></div>
+    <div id="projects" class="divider-line"></div>
 
-    <div class="body-section">
+    <div  class="body-section">
         <div class="section-container">
             <div class="section-content">
 
@@ -74,7 +74,7 @@
                     <h2 class="project-title">👟 ZH Clothing</h2>
 
                     <div class="link-container">
-                        <div class="project-link link-button button wiggle">
+                        <div class="project-link link-button button wiggle" onclick="window.open('https://zh-clothing.netlify.app/','_blank')">
                             <p class="link-button-text">VIEW</p>
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                     <h2 class="project-title">🔎 TweetScan</h2>
 
                     <div class="link-container">
-                        <div class="project-link link-button button wiggle">
+                        <div class="project-link link-button button wiggle" onclick="window.open('https://tweetscan1.herokuapp.com/','_blank')">
                             <p class="link-button-text">VIEW</p>
                         </div>
                     </div>
@@ -147,7 +147,7 @@
                     <h2 class="project-title">🎶 ClickBPM</h2>
 
                     <div class="link-container">
-                        <div class="project-link link-button button wiggle">
+                        <div class="project-link link-button button wiggle" onclick="window.open('https://codehawker.github.io/clickbpm/','_blank')">
                             <p class="link-button-text">VIEW</p>
                         </div>
                     </div>
@@ -169,7 +169,7 @@
         </div>
     </div>
 
-    <div class="divider-line"></div>
+    <div id="education" class="divider-line"></div>
 
     <div class="body-section">
         <div class="section-container">
@@ -228,12 +228,16 @@
 
     <div class="body-section last-section">
         <div class="contact-button button wiggle">
-            <a class="contact-button-text">✉️ Contact</a>
+            <a class="contact-button-text" 
+                onclick="document.location = 'mailto:zanehawken@gmail.com' ">✉️ Contact</a>
         </div>
 
     </div>
 
+    <script src="script.js"></script>
    
 </body>
+
+
 
 </html>
